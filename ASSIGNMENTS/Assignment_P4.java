@@ -1,6 +1,6 @@
 public class Assignment_P4 {
 
-    
+     
     public static String toTitleCase(String name) {
         if (name == null || name.isBlank()) return "";
         String[] words = name.split("\\s+");
@@ -9,7 +9,7 @@ public class Assignment_P4 {
         for (String word : words) {
             if (!word.isEmpty()) {
                 String first = word.substring(0, 1).toUpperCase();
-                String rest 
+                String rest = word.substring(1).toLowerCase();
        
                 titleCase.append(first).append(rest).append(" ");
             }
@@ -63,7 +63,7 @@ public class Assignment_P4 {
         String fullName = "john WICK";
         String email = "john.wick@example.com";
         String sentence = "Hello World From Java";
- Title Case Conversion
+
         String formattedName = toTitleCase(fullName);
 
         
